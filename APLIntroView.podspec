@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/apploft/APLIntroView.git", :tag => "#{s.version}" }
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
   s.framework  = "UIKit"
