@@ -2,15 +2,16 @@ Pod::Spec.new do |s|
 
   s.name         = "APLIntroView"
   s.version      = "0.1.0"
-  s.summary      = ""
+  s.summary      = "APLIntroView is designed to help you easily extend the launch image of an app with an image or video in a customizable way"
 
   s.description  = <<-DESC
+  					APLIntroView uses a single ViewController to manage the extending of the launchscreen. You can extend the launch 
+  					simply with an image and/or a video. There are options for customizing the View Controller's behavior.
                    DESC
 
   s.homepage     = "https://github.com/apploft/APLIntroView"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   s.author             = { "Philip Krück" => "philip.krueck@apploft.de" }
