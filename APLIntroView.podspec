@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "..."
 
   s.description  = <<-DESC
-  					...
+  					..
                    DESC
 
   s.homepage     = "https://github.com/apploft/APLIntroView"
