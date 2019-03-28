@@ -32,6 +32,7 @@ class IntroViewController: UIViewController {
     // MARK: private properties
     private var imageView: UIImageView!
     private var videoPlayerView: APLVideoPlayerView!
+    private static var keyValueObservationContext = 0
 
     override var prefersStatusBarHidden: Bool {
         return isStatusBarHidden
@@ -39,7 +40,7 @@ class IntroViewController: UIViewController {
 
     deinit {
         NotificationCenter.default.removeObserver(self)
-        videoPlayerView.avPlayer.removeObserver(self, forKeyPath: "status")
+        videoPlayerView.avPlayer.removeObserver(self, forKeyPath: "status", context: &IntroViewController.keyValueObservationContext)
     }
 
     override func viewDidLoad() {
@@ -99,7 +100,7 @@ class IntroViewController: UIViewController {
             videoPlayerView.setVideoFilename(videoFileName, loop: videoDoesLoop)
             videoPlayerView.videoGravity = .resizeAspectFill
             videoPlayerView.avPlayer.actionAtItemEnd = .pause
-            videoPlayerView.avPlayer.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.new, context: nil)
+            videoPlayerView.avPlayer.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.new, context: &IntroViewController.keyValueObservationContext)
             videoPlayerView.play()
         }
     }
@@ -113,6 +114,11 @@ class IntroViewController: UIViewController {
     }
 
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard context == &IntroViewController.keyValueObservationContext else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+            return
+        }
+
         if keyPath == "status" {
             if videoPlayerView.avPlayer.status == .readyToPlay {
                 delegate?.introViewControllerVideoPlayerIsReadyToPlay(self)
