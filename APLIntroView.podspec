@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/apploft/APLIntroView"
   
-  s.swift_version = "4.2"
+  s.swift_version = '4.2'
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   
