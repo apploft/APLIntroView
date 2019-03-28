@@ -5,9 +5,8 @@ Pod::Spec.new do |s|
   s.summary      = "This piece of information is pretty invalid"
 
   s.description  = <<-DESC
-                   * blafasel
-                   * gibbelgibbel
-                   * bla
+                   * APLIntroView uses a single ViewController to extend the launch screen by displaying the launch image 
+                   * or showing a video with configurable options.
                    DESC
 
   s.homepage     = "https://github.com/apploft/APLIntroView"
