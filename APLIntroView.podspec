@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "https://github.com/apploft/APLIntroView.git" }
+  s.source       = { :git => "https://github.com/apploft/APLIntroView.git", :tag => 'v0.1.0' }
 
   s.source_files  = "Classes", "Classes/**/*.{swift}"
   s.exclude_files = "Classes/Exclude"
