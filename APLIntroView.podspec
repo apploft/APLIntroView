@@ -1,29 +1,30 @@
 Pod::Spec.new do |s|
 
-s.platform = :ios
-s.ios.deployment_target = '10.0'
-s.name = "APLIntroView"
-s.summary = "APLIntroView lets a user easily extend a launch image with various options including playing video."
-s.requires_arc = true
+  s.name         = 'APLIntroView'
+  s.version      = "0.1.0"
+  s.summary      = 'APLIntroView lets a user easily extend a launch image with various options including playing video.'
 
-s.version = "0.1.0"
+  s.description  = <<-DESC
+        APLIntroView has one view controller class which handles the introductory screen of your application. 
+        You can either extend the launch image and/or easily present a video. 
+                   DESC
 
-s.license = { :type => "MIT", :file => "LICENSE" }
+  s.homepage     = 'https://github.com/apploft/APLIntroView'
 
-s.author = { "Philip Krück" => "philip.krueck@apploft.de" }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
-s.homepage = "https://github.com/apploft/APLIntroView"
+  s.author       = { 'Philip Krück' => 'philip.krueck@apploft.de' }
 
-s.source = { :git => "https://github.com/apploft/APLIntroView.git",
-:tag => "#{s.version}" }
+  s.platform     = :ios, '10.0'
+  
+  s.source       = { :git => 'https://github.com/apploft/APLIntroView.git', :tag => s.version.to_s }
 
-s.framework = "UIKit"
-s.dependency 'APLVideoPlayerView', '~> 0.0.6'
+  s.source_files  = 'APLIntroView/**/*.{swift}'
+  
+  s.framework = 'UIKit'
+  s.dependency 'APLVideoPlayerView', '~> 0.0.6'
 
-s.source_files = "APLIntroView/**/*.{swift}"
-
-s.resources = "APLIntroView/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
-
-s.swift_version = "4.2"
+  s.requires_arc = true
 
 end
+
