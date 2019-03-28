@@ -18,7 +18,7 @@ s.source = { :git => "https://github.com/apploft/APLIntroView.git",
 :tag => "#{s.version}" }
 
 s.framework = "UIKit"
-s.dependency 'APLIntroView', '~> 0.0.6'
+s.dependency 'APLVideoPlayerView', '~> 0.0.6'
 
 s.source_files = "APLIntroView/**/*.{swift}"
 
