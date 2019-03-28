@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   
-  s.author       = "Michael Kamphausen", "Philip Krück"
+  s.author       = "Philip Krück"
   
   s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/apploft/APLIntroView.git", :tag => s.version.to_s }
 
-  s.source_files  = "Classes", "Classes/**/*.{swift}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "APLIntroView", "APLIntroView/**/*.{swift,h}"
+  s.exclude_files = "APLIntroView/Exclude"
   
   s.requires_arc = true
 
