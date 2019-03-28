@@ -11,6 +11,8 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/apploft/APLIntroView"
+  
+  s.swift_version = "4.2"
 
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   
@@ -23,6 +25,8 @@ Pod::Spec.new do |s|
   s.source_files  = "APLIntroView", "APLIntroView/**/*.{swift,h}"
   s.exclude_files = "APLIntroView/Exclude"
   
+  s.framework  = "UIKit"
   s.requires_arc = true
-
+  s.dependency "APLVideoPlayerView", "~> 0.0.6"
+  
 end
