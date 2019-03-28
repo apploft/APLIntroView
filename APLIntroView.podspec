@@ -1,13 +1,8 @@
 Pod::Spec.new do |s|
 
   s.name         = 'APLIntroView'
-  s.version      = "0.1.0"
+  s.version      = '0.1.0'
   s.summary      = 'APLIntroView lets a user easily extend a launch image with various options including playing video.'
-
-  s.description  = <<-DESC
-        APLIntroView has one view controller class which handles the introductory screen of your application. 
-        You can either extend the launch image and/or easily present a video. 
-                   DESC
 
   s.homepage     = 'https://github.com/apploft/APLIntroView'
 
