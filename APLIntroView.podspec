@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.framework  = "UIKit"
   s.requires_arc = true
 
-  s.dependency "APLVideoPlayerView", "~> 0.0.6"
+  # s.dependency "APLVideoPlayerView", "~> 0.0.6"
 
 end
