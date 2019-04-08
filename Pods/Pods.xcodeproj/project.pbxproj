@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		1A840AC1D3FFE2C3D199CF99F84C976D /* APLVideoPlayerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APLVideoPlayerView.xcconfig; sourceTree = "<group>"; };
 		1AA347DC639AEBAA60AD5E23FBA9822C /* APLVideoPlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "APLVideoPlayerView-umbrella.h"; path = "../../Headers/Public/APLVideoPlayerView/APLVideoPlayerView-umbrella.h"; sourceTree = "<group>"; };
-		5079098BD523C7B06E46E699F457E4EA /* libPods-APLIntroView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-APLIntroView.a"; path = "libPods-APLIntroView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5079098BD523C7B06E46E699F457E4EA /* libPods-APLIntroView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APLIntroView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		562261F519A43062C53A80344D872656 /* APLVideoPlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APLVideoPlayerView-dummy.m"; sourceTree = "<group>"; };
 		5F6F1A441B8A8BA0512ED14A4F39D53A /* APLVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APLVideoPlayerView.m; path = Classes/APLVideoPlayerView.m; sourceTree = "<group>"; };
 		606279409245E096D6074DD95D3E5074 /* APLVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APLVideoPlayerView.h; path = Classes/APLVideoPlayerView.h; sourceTree = "<group>"; };
@@ -35,11 +35,11 @@
 		726B8680D6722F19A794E4EA3632647F /* Pods-APLIntroView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-APLIntroView-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7FAF3B3E5B7E0503450F4CF62715D468 /* Pods-APLIntroView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-APLIntroView-acknowledgements.plist"; sourceTree = "<group>"; };
 		8C995CA816C85C468C92B0C5DB465C2A /* APLVideoPlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = APLVideoPlayerView.modulemap; path = ../../Headers/Public/APLVideoPlayerView/APLVideoPlayerView.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9ABE63F2AA77DAC086DA4E911757F38F /* APLVideoPlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APLVideoPlayerView-prefix.pch"; sourceTree = "<group>"; };
 		AA79E89A5D145BFE07D4B6B53B81E14D /* Pods-APLIntroView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-APLIntroView.debug.xcconfig"; sourceTree = "<group>"; };
 		C1E13363A2CD94A920629A7049AD9790 /* Pods-APLIntroView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-APLIntroView-dummy.m"; sourceTree = "<group>"; };
-		EDDB4E54F02F1DA7E81DCD2C0501FF3D /* libAPLVideoPlayerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAPLVideoPlayerView.a; path = libAPLVideoPlayerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB4E54F02F1DA7E81DCD2C0501FF3D /* libAPLVideoPlayerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPLVideoPlayerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5E4F11230A0D337B3AD75871BE1856 /* Pods-APLIntroView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-APLIntroView-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,6 @@
 				5F6F1A441B8A8BA0512ED14A4F39D53A /* APLVideoPlayerView.m */,
 				E792FBB77253E336807934627A5B8795 /* Support Files */,
 			);
-			name = APLVideoPlayerView;
 			path = APLVideoPlayerView;
 			sourceTree = "<group>";
 		};
@@ -206,13 +205,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -282,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -398,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -449,8 +451,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
