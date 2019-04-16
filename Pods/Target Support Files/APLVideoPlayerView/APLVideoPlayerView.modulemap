@@ -1,0 +1,6 @@
+module APLVideoPlayerView {
+  umbrella header "APLVideoPlayerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

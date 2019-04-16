@@ -1,16 +1,16 @@
 PODS:
-  - APLVideoPlayerView (0.0.6)
+  - APLVideoPlayerView (0.0.7)
 
 DEPENDENCIES:
-  - APLVideoPlayerView (~> 0.0.6)
+  - APLVideoPlayerView (~> 0.0.7)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - APLVideoPlayerView
 
 SPEC CHECKSUMS:
-  APLVideoPlayerView: 28d96861c82b508449b50bd55c69345aaeb9b3b7
+  APLVideoPlayerView: 977148bc8b8292401f3a5c7722b15b851291495a
 
-PODFILE CHECKSUM: 6997b577c471d1369d4e627f19a85bda7b78c81d
+PODFILE CHECKSUM: 129e04495cc76ce376b409bb9f0688044b33011e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0.beta.3
