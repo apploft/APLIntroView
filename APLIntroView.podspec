@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APLIntroView"
-  s.version      = "0.5.0"
+  s.version      = "0.6.0"
   s.summary      = "This piece of information is pretty invalid"
 
   s.description  = <<-DESC
