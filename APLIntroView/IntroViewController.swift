@@ -21,8 +21,10 @@ open class IntroViewController: UIViewController {
     open weak var delegate: IntroViewControllerDelegate?
     open var imageName: String?
     open var videoName: String?
+    open var videoFileExtension: String = ".mp4"
     open var canDismissViewControllerWithTouch = false
     open var videoDoesLoop = false
+    open var configureForAmbientPlayback: Bool = true
     open var isStatusBarHidden = false {
         didSet {
             setNeedsStatusBarAppearanceUpdate()
@@ -96,7 +98,11 @@ open class IntroViewController: UIViewController {
     
     open func setupVideoPlayer() {
         if let videoFileName = videoName {
-            videoPlayerView.setVideoFilename(videoFileName, loop: videoDoesLoop)
+            if configureForAmbientPlayback {
+                videoPlayerView.configureForAmbientPlayback()
+            }
+
+            videoPlayerView.setVideoFilename(videoFileName, withExtension: videoFileExtension, loop: videoDoesLoop)
             videoPlayerView.videoGravity = .resizeAspectFill
             videoPlayerView.avPlayer.actionAtItemEnd = .pause
             videoPlayerView.avPlayer.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.new, context: &IntroViewController.keyValueObservationContext)
