@@ -30,6 +30,11 @@ open class IntroViewController: UIViewController {
             setNeedsStatusBarAppearanceUpdate()
         }
     }
+    open var statusBarStyle: UIStatusBarStyle = .default {
+        didSet {
+            setNeedsStatusBarAppearanceUpdate()
+        }
+    }
     
     // MARK: private properties
     private var imageView: UIImageView!
@@ -117,6 +122,8 @@ open class IntroViewController: UIViewController {
     @objc private func videoDidFinishNotification(notification: Notification) {
         delegate?.introViewControllerDidFinishPlayingVideo(self)
     }
+
+    open override var preferredStatusBarStyle: UIStatusBarStyle { statusBarStyle }
     
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard context == &IntroViewController.keyValueObservationContext else {
